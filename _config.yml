@@ -21,11 +21,24 @@ periscope_username: randomexample
 reddit_username: u/randomexample
 twitter_username: randomexample
 youtube_username: user/randomexample
-email: damianoloan0@gmail.com
+email: hello@jekyllorg.com
 
 # API keys
+# Left blank on purpose so the key is never committed - without it the map
+# sections fall back to a placeholder message instead of failing (see
+# pages/about.html and _layouts/event.html).
+# To use a real key:
+#   - Locally: create a gitignored _config_local.yml containing
+#     `api_keys: { google: "your-key" }` and run
+#     `jekyll serve --config _config.yml,_config_local.yml`
+#     (later --config files override earlier ones).
+#   - In CI/deployment: Jekyll doesn't read environment variables directly,
+#     and GitHub Pages' automatic build doesn't accept extra --config files,
+#     so store the key as a build secret (e.g. a GitHub Actions repository
+#     secret) and have the workflow substitute it into this file, or into a
+#     generated _config_local.yml as above, before running `jekyll build`.
 api_keys:
-  google: "AIzaSyBTrns7kOi-WxTG7d-IrwzApkn4JvlCL5c"
+  google: ""
 
 # Build settings
 markdown: kramdown

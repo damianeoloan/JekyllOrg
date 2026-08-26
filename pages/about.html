@@ -54,7 +54,13 @@ permalink: /about/
     <div>
       <div class="row">
         <div id="aboutmap_wrapper">
+          {% if site.api_keys.google != blank %}
           <div id="map" style="width:100%; height:100%"></div>
+          {% else %}
+          <!-- No site.api_keys.google set - see the api_keys note in
+               _config.yml for how to provide one without committing it. -->
+          <p class="map-placeholder">This area is a placeholder for a Google Map. API key required.</p>
+          {% endif %}
         </div>
       </div>
     </div>

@@ -1,3 +1,9 @@
+{% if site.api_keys.google != blank %}
+{% comment %}
+  No site.api_keys.google set - this whole script block (and the Maps JS
+  loader below) is skipped. See the api_keys note in _config.yml for how
+  to provide a key without committing it.
+{% endcomment %}
 <script>
     var markers = [
         {% for location in site.data.locations %}
@@ -47,3 +53,4 @@
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.api_keys.google }}&callback=initMap"
   type="text/javascript"></script>
+{% endif %}

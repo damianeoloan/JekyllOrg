@@ -5,7 +5,13 @@ layout: default
   <header class="page-header">
     <div class="row">
       <div id="map_wrapper">
+        {% if site.api_keys.google != blank %}
         <div id="map_canvas" style="width:100%; height:100%"></div>
+        {% else %}
+        <!-- No site.api_keys.google set - see the api_keys note in
+             _config.yml for how to provide one without committing it. -->
+        <p class="map-placeholder">This area is a placeholder for a Google Map. API key required.</p>
+        {% endif %}
       </div>
     </div>
   </header>
@@ -46,6 +52,7 @@ layout: default
   </div>
 </article>
 
+{% if site.api_keys.google != blank %}
 <script>
     var markers = [
         {% for location in page.locations %}
@@ -91,3 +98,4 @@ layout: default
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.api_keys.google }}&callback=initMap"
   type="text/javascript"></script>
+{% endif %}
