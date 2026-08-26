@@ -4,26 +4,26 @@
 
 - name:  Erin Herrmann
   role: CEO
-  img: http://placehold.it/120x120
+  img: https://placehold.co/120x120
   description: "Erin is a JekyllOrg co-founder and has been CEO for eight years."
   email: erin@jekyllorg.com
 - name: 陈建国 Billy Chen
   role: CFO
-  img: http://placehold.it/120x120
+  img: https://placehold.co/120x120
   description: "Billy joined JekyllOrg as CFO in 2015."
   email: darron@jekyllorg.com
 - name: Lavonna Rivero
   role: COO
-  img: http://placehold.it/120x120
+  img: https://placehold.co/120x120
   description: "Lavonna draws on 30 years experience in operational and executive roles."
   email: lavonna@jekyllorg.com
 - name: Scot Gilliland
   role: CTO
-  img: http://placehold.it/120x120
+  img: https://placehold.co/120x120
   description: "Scot is one of two co-founders at JekyllOrg, and CTO."
   email: scot@jekyllorg.com
 - name: Aleida Brookshire
   role: CPO
-  img: http://placehold.it/120x120
+  img: https://placehold.co/120x120
   description: "Aleida has been JekyllOrg's Chief People Officer since 2012."
   email: aleida@jekyllorg.com
