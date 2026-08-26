@@ -28,7 +28,7 @@ title: Home
       <a href="{{ '/blog/index.html' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'Latest News from ' }}">
         <h2 class="home-header">Latest News</h2>
       </a>
-      {% for post in site.posts | limit:3 %}
+      {% for post in site.posts limit:3 %}
       <li>
         <a href="https://getpocket.com/save?url={{ post.url | prepend: site.baseurl | prepend: site.url }}&title={{ post.title }}" title="Save to Pocket" target="_blank">
           <span class="pocket-icon">
@@ -68,7 +68,7 @@ title: Home
         <li class="one-third col{% if forloop.last == true %} final-col{% endif %}">
         {% endif %}
           <div class="tn-container">
-            <img src="{{ 'services-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{  }}" />
+            <img src="{{ 'services-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ service.title }}" />
             <div class="mask"></div>
             <div class="text-box">
               <h1>{{ service.title }}</h1>
@@ -148,7 +148,7 @@ title: Home
         <li class="one-third col{% if forloop.last == true %} final-col{% endif %}">
           {% endif %}
           <div class="tn-container">
-            <img src="{{ 'issues-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{  }}" />
+            <img src="{{ 'issues-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ issue.title }}" />
             <div class="mask"></div>
             <div class="text-box">
               <h1>{{ issue.title }}</h1>

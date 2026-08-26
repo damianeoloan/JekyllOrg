@@ -18,7 +18,7 @@ related: services resources events
       <li class="one-third col">
         {% endif %}
         <div class="tn-container">
-          <img src="{{ page.title | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{  }}" />
+          <img src="{{ page.title | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title }}" />
           <div class="mask"></div>
           <div class="text-box">
             <h1>{{ issue.title }}</h1>

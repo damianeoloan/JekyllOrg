@@ -17,7 +17,7 @@
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description | truncate: 160 }}{% endif %}">
   <meta name="twitter:creator" content="{% for member in site.data.team-members %}{{ member.name }}{% unless forloop.last == true %}, {% endunless %}{% endfor %}">
   <!-- Twitter Summary card images must be at least 120x120px -->
-  <meta name="twitter:image" content="{% if page.img-path %}{{ "{{ page.img-path | prepend: site.baseurl | prepend: site.url }}"{% else %}{{ "/images/the-sunflower-1.jpg" | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.img-path %}{{ page.img-path | prepend: site.baseurl | prepend: site.url }}{% endif %}">
   <!-- Open Graph -->
   <meta property="og:title" content="{{ site.title | append: ' | '}}{{ page.title }}">
   <meta property="og:type" content="article" />
