@@ -43,8 +43,8 @@ api_keys:
 # Build settings
 markdown: kramdown
 
-# Gems
-gems:
+# Plugins
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-mentions
